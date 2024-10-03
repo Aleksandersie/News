@@ -22,11 +22,7 @@ export default function MainPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div
-          className={
-            "w-full grid grid-cols-1 xl:grid-cols-2 place-items-center  justify-center gap-7 "
-          }
-        >
+        <div className={"w-full flex flex-wrap  justify-center gap-7 "}>
           {news.map((news) => (
             <NewsCard key={news.id} {...news} />
           ))}
